@@ -11,7 +11,24 @@
    .container {border: 1px solid green}
    .navbar-brand img {height:70px}
    .btn-outline-success {color: #008c4a}
-   
+   .position {
+       position:relative
+   }
+   .overlay {
+       position:absolute;
+       right:0;
+       bottom:0;
+   }
+   .to-right {
+       position:absolute;
+       right:0;
+       bottom:0;
+   }
+   .to-left {
+       position:absolute;
+       left:0;
+       bottom:0;
+   }
    </style>
 <!-- NAVBAR STARTS HERE -->
 
@@ -62,8 +79,21 @@
 <!-- NAVBAR ENDS HERE -->
 
 <!-- FIRST IMAGE STARTS HERE -->
-<div class="container-fluid">
-   <img src="images\logo.png" class="image-fluid" />
+<div class="container-fluid position">
+    <div class="row">
+        <img src="images\logo.png" class="img-fluid" />
+        <div class="row overlay">
+            <div class="border col-3 to-left">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
@@ -74,10 +104,11 @@
 <!-- FIRST IMAGE ENDS HERE -->
 
 <!-- SECOND IMAGE STARTS HERE -->
-<div class="container-fluid">
-    <img src="images\logo.png" class="image-fluid" />
-    <div class="row">
-        <div class="border col-3">
+<div class="container-fluid position">
+   <div class="row">
+    <img src="images\logo.png" class="img-fluid" />
+    <div class="row overlay">
+        <div class="border col-3 to-right">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -86,6 +117,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </div>
 
@@ -96,49 +128,155 @@
 
 <!-- COMMON VIEWED START HERE -->
 <div class= "container-fluid">
-    
-	<div class= "row">
-		<div class= "border col-3">
-            <div class="card" style="width: 18rem;">
-                <img src="images\logo.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class:row>
+        <h1>
+            Commonly Viewed
+        </h1>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="border col-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images\logo.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border col-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images\logo.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border col-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images\logo.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border col-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images\logo.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="border col-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images\logo.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border col-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images\logo.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border col-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images\logo.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border col-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images\logo.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="border col-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images\logo.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border col-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images\logo.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border col-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images\logo.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border col-3">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images\logo.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-		</div>
-        <div class="border col-3">
-            <div class="card" style="width: 18rem;">
-                <img src="images\logo.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="border col-3">
-            <div class="card" style="width: 18rem;">
-                <img src="images\logo.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="border col-3">
-            <div class="card" style="width: 18rem;">
-                <img src="images\logo.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-	</div>
+    </div>
 </div>
 
 <!-- COMMON VIEWED END HERE -->
