@@ -54,7 +54,7 @@ $primary: ("custom-light": #EAEAEA);
 $secondary: ("custom-dark": #3f3f3f);
 $success: ("custom-mobogreen": #008C4A);
 $info: ("custom-moboblue": #4990E2);
-
+$primary-text: ("custom-light": #EAEAEA);
 // scss-docs-start theme-text-dark-variables
 $primary-text-emphasis-custom:        tint-color($primary, 40%);
 $secondary-text-emphasis-custom:      tint-color($secondary, 40%);
@@ -62,8 +62,8 @@ $success-text-emphasis-custom:        tint-color($success, 40%);
 $info-text-emphasis-custom:           tint-color($info, 40%);
 $warning-text-emphasis-custom:        tint-color($warning, 40%);
 $danger-text-emphasis-custom:         tint-color($danger, 40%);
-$light-text-emphasis-custom:          $gray-100;
-$dark-text-emphasis-custom:           $gray-300;
+$light-text-emphasis-custom:          ("custom-light": #EAEAEA);
+$dark-text-emphasis-custom:           ("custom-dark": #3f3f3f);
 // scss-docs-end theme-text-dark-variables
 
 // scss-docs-start theme-bg-subtle-dark-variables
